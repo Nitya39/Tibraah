@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tibraah – Traditions Delivered</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ✅ Sticky Navbar goes here -->
+<nav class="navbar">
+  <div class="logo">
+  <img src="logo.PNG" alt="Tibraah Logo">
+</div>
+
+  <ul class="nav-links">
+    <li><a href="#head">Home</a></li>
+    <li><a href="#text">Tibraah</a></li>
+    <li><a href="#story">Story</a></li>
+    <li><a href="#kits">Kits</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ✅ Hero Banner -->
+<header id="head">
+ <!-- <div>
+  <H3>Planning a Punjabi wedding from miles away?</H3>
+  <h4>Tibraah - Punjab's warmth, at your doorstep.</h4>
+ </div> -->
+</header>
+
+<section id="text">
+  <div class="text-container">
+    <div class="text-image">
+      <img src="Gemini_Generated_Image_35unyp35unyp35un.jpg" alt="text Image">
+    </div>
+    <div class="text-text">
+      <h1>Your Tibraah, Delivered Worldwide</h1>
+      <p>Curated Punjabi wedding kits & accessories. From Amritsar to your doorstep — anywhere in the world.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ✅ Emotional Story -->
+<section id="story">
+  <h2 class="section-title">Why Tibraah?</h2>
+  <p class="section-text">
+    Planning a wedding from abroad is stressful. Finding authentic, matching, beautiful outfits in time? Even worse.
+    We’ve been there. That’s why we built Tibraah — to give you peace of mind, style, and tradition in one curated bundle.
+  </p>
+</section>
+
+<!-- ✅ Kits Preview -->
+<section id="kits">
+  <h2 class="section-title">Explore Our Kits</h2>
+  <div class="kits">
+    <div class="kit-box">
+      <div class="kit-image">
+        <img src="groom.png" alt="Groom Tibraah">
+      </div>
+      <div class="kit-content">
+        <h3>Groom Tibraah</h3>
+        <p>Pagri, kurta-pajama, brooch, mala, tie — all coordinated, styled, and packed like royalty.</p>
+      </div>
+    </div>
+    <div class="kit-box">
+      <div class="kit-image">
+        <img src="wedding.png" alt="Wedding Accessory Box">
+      </div>
+      <div class="kit-content">
+        <h3>Wedding Accessory Box</h3>
+        <p>Mojadis, embroidered rumal, safas, malas — for brothers, cousins, and rituals.</p>
+      </div>
+    </div>
+    <div class="kit-box">
+      <div class="kit-image">
+        <img src="return.png" alt="Return Gift Hamper">
+      </div>
+      <div class="kit-content">
+        <h3>Return Gift Hamper</h3>
+        <p>Bangle sets, embroidered dupattas, traditional boxes — packed to impress your guests.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="how">
+  <h2 class="section-title">How It Works</h2>
+  <div class="how-it-works">
+    <div class="how-text">
+      <div class="how-step">
+        <h4>Step 1: Chat With Us</h4>
+        <p>Tell us about your event, location, and needs on WhatsApp.</p>
+      </div>
+      <div class="how-step">
+        <h4>Step 2: We Curate & Style</h4>
+        <p>Our team handpicks and styles your Tibraah from the finest pieces in Punjab.</p>
+      </div>
+      <div class="how-step">
+        <h4>Step 3: Receive & Celebrate</h4>
+        <p>Your Tibraah is shipped to your door with tracking, love, and emotion.</p>
+      </div>
+    </div>
+    <div class="how-image card">
+      <img src="consult.png" alt="consult" class="small-img">
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ✅ Gallery -->
+<section id="gallery">
+  <h2 class="section-title">Real Moments</h2>
+  <p class="section-text">
+    From Canada to California, families trusted Tibraah to deliver style, tradition, and memories.
+    Here's a glimpse of their moments.
+  </p>
+  <div class="gallery">
+    
+    <img src="family.jpg" alt="Unboxing Tibraah">
+    <img src="image.png" alt="Punjabi wedding moment">
+    <img src="uncle.jpg" alt="Gift Box">
+  </div>
+</section>
+
+<!-- ✅ WhatsApp CTA / Contact -->
+<section id="contact">
+  <h2 class="section-title">Start Your Tibraah Today</h2>
+  <p class="section-text">
+    Ready to plan your Tibraah? Chat with us and we’ll take care of everything — from style to shipping.
+  </p>
+  <div style="text-align:center;">
+    <a class="cta-button" href="https://wa.me/919463708809">Chat on WhatsApp</a>
+  </div>
+</section>
+
+<!-- ✅ Footer -->
+<footer>
+  &copy; 2025 Tibraah. All rights reserved. | Made in Punjab | Traditions Delivered™️
+</footer>
+
+
+  <script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('.fade-up, .slide-in').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+
+<script>
+  window.addEventListener('scroll', function() {
+    const header = document.getElementById('head');
+    const scrollY = window.scrollY;
+
+    // Scale down smoothly, min scale is 0.85
+    const scale = Math.max(0.85, 1 - scrollY / 1000);
+    header.style.transform = `scale(${scale})`;
+  });
+</script>
+
+<script>
+  const textObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const container = entry.target;
+      if (entry.isIntersecting) {
+        container.classList.add('slide-in');
+      } else {
+        container.classList.remove('slide-in'); // optional: slide out when hidden
+      }
+    });
+  }, { threshold: 0.2 });
+
+  textObserver.observe(document.querySelector('.text-container'));
+</script>
+
+<script>
+  const storyObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const section = entry.target;
+      if (entry.isIntersecting) {
+        section.classList.add('slide-in');
+      } else {
+        section.classList.remove('slide-in'); // optional: remove to slide out again
+      }
+    });
+  }, {
+    threshold: 0.2,
+    rootMargin: '0px 0px -50px 0px' // slide out a bit earlier
+  });
+
+  storyObserver.observe(document.querySelector('#story'));
+</script>
+
+
+<script>
+  const kitsObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const kits = entry.target;
+      if (entry.isIntersecting) {
+        kits.classList.add('slide-in');
+      } else {
+        kits.classList.remove('slide-in'); // optional: slide out when hidden
+      }
+    });
+  }, {
+    threshold: 0.2,
+    rootMargin: '0px 0px -50px 0px'
+  });
+
+  kitsObserver.observe(document.querySelector('#kits .kits'));
+</script>
+
+<script>
+  const howObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const how = entry.target;
+      if (entry.isIntersecting) {
+        how.classList.add('slide-in');
+      } else {
+        how.classList.remove('slide-in'); // optional: slide out when hidden
+      }
+    });
+  }, {
+    threshold: 0.2,
+    rootMargin: '0px 0px -50px 0px'
+  });
+
+  howObserver.observe(document.querySelector('#how .how-it-works'));
+</script>
+
+<script>
+  const galleryObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const gallery = entry.target;
+      if (entry.isIntersecting) {
+        gallery.classList.add('slide-in');
+      } else {
+        gallery.classList.remove('slide-in');
+      }
+    });
+  }, {
+    threshold: 0.2,
+    rootMargin: '0px 0px -50px 0px'
+  });
+
+  galleryObserver.observe(document.querySelector('#gallery .gallery'));
+</script>
+
+
+</body>
+</html>
